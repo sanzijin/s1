@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.hd_header_wrap {
+				width: 1349px;
+				height: 181px;
+				margin: 0 auto;
+			}
+			
+			.hd_top_bar {
+				width: 1349px;
+				height: 30px;
+				margin: 0 auto;
+				line-height: 30px;
+				background-color: gainsboro;
+			}
+			
+			.i {
+				width: 1228px;
+				height: 30px;
+				margin: 0 auto;
+				line-height: 30px;
+			}
+			
+			.wrap_hd_header {
+				width: 1300px;
+				height: 150px;
+				border-bottom: 1px solid darkgray;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			a:hover {
+				color: red;
+			}
+			
+			.wrap_second {
+				width: 990px;
+				height: 120px;
+				padding: 32px 14px 0 35px;
+				float: right;
+				position: relative;
+			}
+			
+			.wrap_hd_header img {
+				margin: 0;
+				height: 0;
+				width: 261px;
+				height: 150px;
+				float: left;
+			}
+			
+			.wrap_second div img {
+				width: 50px;
+				height: 36px;
+				position: absolute;
+				left: 643px;
+			}
+			
+			.wrap_hd_header input {
+				width: 610px;
+				height: 36px;
+				position: absolute;
+				border: 1px solid orangered;
+			}
+			
+			ul {
+				list-style: none;
+				float: left;
+			}
+			
+			.hd_top_bar ul li {
+				float: left;
+				font-size: 12px;
+				vertical-align: middle;
+			}
+			
+			.hd_top_bar ul li:first-child {
+				width: 135px;
+				height: 30px;
+				text-align: center;
+			}
+			
+			.span {
+				color: darkgray;
+				font-size: 10px;
+				margin-left: 4px;
+			}
+			
+			.hd_top_bar ul li:nth-child(2) {
+				width: 102px;
+				height: 32px;
+				margin-left: 638px;
+				text-align: center;
+				color: red;
+			}
+			
+			.hd_top_bar ul li:nth-child(3) {
+				width: 88px;
+				height: 30px;
+				text-align: center;
+			}
+			
+			.hd_top_bar ul li:nth-child(4) {
+				width: 88px;
+				height: 30px;
+				text-align: center;
+			}
+			
+			.hd_top_bar ul li:nth-child(5) {
+				width: 88px;
+				height: 30px;
+				text-align: center;
+			}
+			
+			.hd_top_bar ul li:nth-child(6) {
+				width: 88px;
+				height: 30px;
+				text-align: center;
+			}
+			
+			.wrap_second img {
+				width: 121px;
+				height: 36px;
+				float: right;
+				position: absolute;
+				right: 40px;
+				top: 32px;
+			}
+			
+			.wrap_hd_header ul {
+				position: absolute;
+				width: 750px;
+				height: 36px;
+				top: 68px;
+			}
+			
+			.wrap_hd_header li {
+				float: left;
+				margin: 10px;
+				top: 100px;
+				color: darkgray;
+				font-size: 14px;
+			}
+			
+			.wrap_hd_header .ul {
+				position: absolute;
+				width: 750px;
+				height: 36px;
+				top: 110px;
+			}
+			
+			.wrap_hd_header .ul li {
+				font-size: 17px;
+				color: black;
+			}
+			
+			.tou {
+				width: 1349px;
+				height: 477px;
+				margin: 0 auto;
+			}
+			
+			.d {
+				color: black;
+				width: 88px;
+				height: 30px;
+				line-height: 30px;
+			}
+			
+			.c {
+				display: none;
+				width: 88px;
+				float: left;
+				left: 100px;
+				text-align: center;
+			}
+			
+			p {
+				margin: 0;
+				padding: 1px;
+			}
+			
+			.d:hover>.c {
+				display: block;
+			}
+			
+			.bottom {
+				text-align: center;
+				margin: 0 auto;
+				width: 1349px;
+				height: 192px;
+			}
+			
+			.bottom dl {
+				float: left;
+				margin: 50px;
+				font-size: 12px;
+				list-style: none;
+			}
+			
+			.bottom dt {
+				font-size: 15px;
+				margin-bottom: 20px;
+			}
+			
+			.ba {
+				float: right;
+				bottom: 0;
+				width: 1349px;
+				color: gray;
+				font-size: 10px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			.q {
+				width: 1228px;
+				height: 127px;
+				margin: 0 auto;
+				float: left;
+				text-align: center;
+				line-height: 127px;
+			}
+			
+			.q ul {
+				/*width: 1228px;
+				height: 127px;*/
+				/*float: left;*/
+				vertical-align: middle;
+			}
+			
+			.q li {
+				height: 66px;
+				width: 205px;
+				/*line-height: 127px;*/
+				/*vertical-align: middle;*/
+				float: left;
+				text-align: center;
+				line-height: 127px;
+				vertical-align: middle;
+				margin-left: 100px;
+				margin-top: 40px;
+			}
+			
+			.q img {
+				width: 66px;
+				height: 66px;
+				/*vertical-align: middle;*/
+			}
+			
+			.q img span {
+				display: block;
+				line-height: 127px;
+				vertical-align: middle;
+			}
+			
+			.cebian {
+				width: 36px;
+				height: 200px;
+				position: fixed;
+				right: 30px;
+				line-height: 18px;
+				text-align: center;
+			}
+			
+			.cebian li {
+				width: 36px;
+				height: 36px;
+				border-bottom: 1px solid gainsboro;
+				font-size: 13px;
+				line-height: 18px;
+				margin: 4px;
+				color: gray;
+				vertical-align: middle;
+			}
+			
+			.cebian li:first-child:hover {
+				background-color: red;
+				color: white;
+			}
+			
+			.cebian li:nth-child(2):hover {
+				background-color: blue;
+				color: white;
+			}
+			
+			.cebian li:nth-child(3):hover {
+				background-color: coral;
+				color: white;
+			}
+			
+			.cebian li:nth-child(4):hover {
+				background-color: #FF00FF;
+				color: white;
+			}
+			
+			.cebian li:nth-child(5):hover {
+				background-color: #CC6600;
+				color: white;
+			}
+			
+			.cebian li:nth-child(6):hover {
+				background-color: #66CC33;
+				color: white;
+			}
+			
+			.cebian li:nth-child(7):hover {
+				background-color: #6633FF;
+				color: white;
+			}
+			
+			.cebian li:nth-child(8):hover {
+				background-color: #FF9900;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="hd_header_wrap">
+
+			<div class="hd_top_bar">
+				<div class="i">
+					<ul>
+						<li>
+							<a href="#">送货地址</a>
+						</li>
+						<li>Hi,请注册
+							<a href="#"><span class="span">注册</span></a>
+						</li>
+						<li>
+							<a href="#">我的订单</a>
+						</li>
+						<li>
+							<div class="d">
+								<a href="#"><span>充值中心</span></a>
+								<div class="c">
+									<p>话费充值</p>
+									<p>流量充值</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">客户服务</a>
+						</li>
+						<li>
+							<a href="#">网站导航</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrap_hd_header ">
+				<img src="img/ChEi11jziCeADU2FAAAcush2hwQ74100.png" />
+				<div class="wrap_second">
+					<input type="search" placeholder="大闸蟹劵买1送1" />
+					<div><img src="img/QQ截图20170914151214.png" /></div>
+					<img class="b" src="img/QQ截图20170914151658.png">
+					<ul>
+						<li>
+							<a href="#">牛奶</a>
+						</li>
+						<li>
+							<a href="#">面粉</a>
+						</li>
+						<li>
+							<a href="#">洗面奶</a>
+						</li>
+						<li>
+							<a href="#">蜂蜜</a>
+						</li>
+						<li>
+							<a href="#">饮用水</a>
+						</li>
+						<li>
+							<a href="#">酱油</a>
+						</li>
+						<li>
+							<a href="#">大米</a>
+						</li>
+						<li>
+							<a href="#">纸</a>
+						</li>
+						<li>
+							<a href="#">牙刷</a>
+						</li>
+						<li>
+							<a href="#">卷纸</a>
+						</li>
+					</ul>
+					<ul class="ul">
+						<li>
+							<a href="#">1号抢购</a>
+						</li>
+						<li>
+							<a href="#">1号团</a>
+						</li>
+						<li>
+							<a href="#">领卷中心</a>
+						</li>
+						<li>
+							<a href="#">商城优选</a>
+						</li>
+						<li>
+							<a href="#">1全球进口</a>
+						</li>
+						<li>
+							<a href="#">1号生鲜</a>
+						</li>
+						<li>
+							<a href="#">美妆馆</a>
+						</li>
+						<li>
+							<a href="#">家居馆</a>
+						</li>
+						<li>
+							<a href="#">电器城</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="cebian">
+			<ul>
+				<li>食品</li>
+				<li>生鲜酒饮</li>
+				<li>个护美妆</li>
+				<li>母婴厨卫</li>
+				<li>家居生活</li>
+				<li>手机家电</li>
+				<li>服饰鞋包</li>
+				<li>懂你想要</li>
+			</ul>
+		</div>
+		<div class="tou">
+			<div class="q">
+				<ul>
+					<li><img src="img/b1.png" />
+						<span>正品保障</span>
+						<span>正品行货</span></li>
+					<li><img src="img/b2.png" /> 满68包邮 满68元，免邮费
+					</li>
+					<li><img src="img/b3.png" />售后无忧</li>
+					<li><img src="img/b4.png" />准时送达</li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<dl>
+					<dt>新手上路</dt>
+					<dd>
+						<a href="#">售后流程</a>
+					</dd>
+					<dd>
+						<a href="#">购物流程</a>
+					</dd>
+					<dd>
+						<a href="#">订购方式</a>
+					</dd>
+					<dd>
+						<a href="#">隐私声明</a>
+					</dd>
+					<dd>
+						<a href="#">推荐分享说明</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>配送与支付</dt>
+					<dd>
+						<a href="#">货到付款区域</a>
+					</dd>
+					<dd>
+						<a href="#">配送支付查询</a>
+					</dd>
+					<dd>
+						<a href="#">支付方式说明</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>会员中心</dt>
+					<dd>
+						<a href="#">资金管理</a>
+					</dd>
+					<dd>
+						<a href="#">我的收藏</a>
+					</dd>
+					<dd>
+						<a href="#">我的订单</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>服务保证</dt>
+					<dd>
+						<a href="#">退换货原则</a>
+					</dd>
+					<dd>
+						<a href="#">售后服务保证</a>
+					</dd>
+					<dd>
+						<a href="#">产品质量保证</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>联系我们</dt>
+					<dd>
+						<a href="#">网站故障报告</a>
+					</dd>
+					<dd>
+						<a href="#">购物咨询</a>
+					</dd>
+					<dd>
+						<a href="#">投诉与建议</a>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt>APP更优惠</dt>
+					<dd>
+						<img src="img/QQ截图20170914171749.png" />
+					</dd>
+				</dl>
+				<dl>
+					<dt>加微信查订单</dt>
+					<dd>
+						<img src="img/QQ截图20170914171749.png" />
+					</dd>
+				</dl>
+			</div>
+			<div class="ba">
+				<div class="baxk">
+					<p>关于1号店 | 我们的团队 | 网站联盟 | 热门搜索 | 友情链接 | 1号店社区 | 商家登录 | 供应商登录 | 放心搜 | 1号店新品 | 开放平台 | 沃尔玛</p>
+					<p> 沪ICP备16050468号 | 沪B2-20170039 | 经营证照 | 互联网药品信息服务资格证 | 违法和不良信息举报电话：0514-85899118</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
